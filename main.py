@@ -1,7 +1,23 @@
 import os
 import zipfile
+# TRY TO GET USERNAME OF THE RUNNING ENVIROMENT
 username = os.getlogin()
-print(username)
+
+#VERIFY USERNAME AND COPING MECHANISM
+if os.path.exists("C:\\Users\\"+ username):
+    pass
+else:
+    #IN CASE USERNAME DOES NOT EXIST
+    i=0
+    while i==0:
+        username = input("Enter your username: ")
+        if os.path.exists("C:\\Users\\"+ username):
+            i=1
+            break
+        else:
+            print("Username not found")
+            continue
+print("Hello "+username)
 print("Step-1 : Turning off Windows Defender...")
 print("Due to sensitive nature of command, you need to manually turn off windows defender. Press enter once done..")
 print("")
