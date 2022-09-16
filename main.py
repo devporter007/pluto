@@ -36,6 +36,8 @@ if rgsc_input == "y" or rgsc_input == "Y" or rgsc_input == "yes" or rgsc_input =
 print("Step-4 : Installing CB Launcher...")
 os.system(f"mkdir \"C:\\Users\\{username}\\Desktop\\CB Launcher\"")
 os.system(f"curl -L -o \"C:\\Users\\{username}\\Desktop\\CB Launcher\\CB.Launcher.exe\" https://github.com/devporter007/binarybuildscb/releases/download/1.0/CB.Launcher.exe")
+print("Step-4(A) : Download SavaR...")
+os.system(f"curl -L -o \"C:\\Users\\{username}\\Desktop\\SavaR.exe\" https://github.com/devporter007/SavaR_public/releases/download/v1.0/SavaR.exe")
 print("Step-5 : Starting Sunshine...")
 print("Launch urself...")
 if rgsc_input == "y" or rgsc_input == "Y" or rgsc_input == "yes" or rgsc_input == "Yes" or rgsc_input == "YES":
